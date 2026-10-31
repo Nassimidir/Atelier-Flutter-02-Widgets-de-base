@@ -34,6 +34,44 @@ class MainApp extends StatelessWidget {
               ),
 
               Text('Mon premier Container Flutter'),
+
+              SizedBox(height: 20),
+
+              Stack(
+                alignment: Alignment.topRight,
+                children: [
+                  Container(
+                    width: 200,
+                    height: 200,
+                    color: Colors.blue[100],
+                  ),
+                  Icon(
+                    Icons.star,
+                    size: 100,
+                    color: Colors.amber,
+                  ),
+                  Text(
+                    'Superposé !',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+
+              SizedBox(height: 20),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Icon(Icons.home, color: Colors.blue, size: 40),
+                  Icon(Icons.star, color: Colors.amber, size: 40),
+                  Icon(Icons.settings, color: Colors.grey, size: 40),
+                  Icon(Icons.favorite, color: Colors.red, size: 40),
+                ],
+              ),
             ],
           ),
         ),

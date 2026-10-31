@@ -72,6 +72,34 @@ class MainApp extends StatelessWidget {
                   Icon(Icons.favorite, color: Colors.red, size: 40),
                 ],
               ),
+
+              SizedBox(height: 20),
+
+              // Étape 6 : Deuxième colonne
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    'Titre principal',
+                    style: TextStyle(
+                      fontSize: 26,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  Text(
+                    'Sous-titre ou description',
+                    style: TextStyle(fontSize: 18),
+                  ),
+                  SizedBox(height: 10),
+                  Icon(
+                    Icons.thumb_up,
+                    color: Colors.green,
+                    size: 50,
+                  ),
+                ],
+              ),
             ],
           ),
         ),
